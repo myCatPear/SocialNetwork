@@ -1,4 +1,16 @@
 .nav {
     grid-area: n;
     background-color: antiquewhite;
+    padding: 10px 0 0 10px;
+}
+
+.item a {
+    color:darkslategray;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.item a.active {
+    color:gold;
 }
