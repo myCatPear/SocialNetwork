@@ -2,11 +2,3 @@
     grid-area: n;
     background-color: antiquewhite;
 }
-
-.item a{
-    color: #fff;
-}
-
-.item.active a {
-    color:gold;
-}

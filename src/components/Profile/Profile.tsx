@@ -4,7 +4,7 @@ import MyPosts from "./MyPosts/MyPosts";
 
 function Profile() {
     return (
-        <div className={classes.content}>
+        <div>
             <div>
                 <img src="https://static.addtoany.com/images/dracaena-cinnabari.jpg" alt=""/>
             </div>
