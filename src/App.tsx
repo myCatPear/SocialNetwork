@@ -17,8 +17,6 @@ function App() {
                         <Route path={"/profile"} element={<Profile/>}/>
                         <Route path={"/dialogs"} element={<Dialogs/>}/>
                         <Route path={"/news"}/>
-                        <Route path={"/music"} element={<Dialogs/>}/>
-                        <Route path={"/settings"} element={<Dialogs/>}/>
                     </Routes>
                 </div>
             </div>

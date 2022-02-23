@@ -7,6 +7,10 @@ display: grid;
     padding: 10px;
 }
 
+.dialogsItems a {
+    color:#fff;
+}
+
 .dialogsItems .active {
     color:gold;
 }
@@ -18,8 +22,10 @@ display: grid;
 
 .messages {
     padding: 10px;
+
 }
 
 .message {
     padding-bottom: 10px;
+    color:#fff;
 }
