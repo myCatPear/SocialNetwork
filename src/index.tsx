@@ -4,9 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const postsData: Array<{ id: number; message: string; likesCount:number }> = [
+    {id: 1, message: "hello", likesCount:12},
+    {id: 1, message: "hello", likesCount:12},
+    {id: 1, message: "hello", likesCount:12},
+    {id: 1, message: "hello", likesCount:12},
+    {id: 2, message: "How are you?", likesCount:33},
+    {id: 2, message: "How are you?", likesCount:33},
+    {id: 2, message: "How are you?", likesCount:33},
+    {id: 2, message: "How are you?", likesCount:33},
+    {id: 2, message: "How are you?", likesCount:33},
+]
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App obj={postsData}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
