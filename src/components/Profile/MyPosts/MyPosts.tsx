@@ -14,9 +14,12 @@ import Post from "./Post/Post";
 //
 // const postsElements = postsData.map(post => <Post message={post.message} likesCount={post.likesCount}/>);
 
-function MyPosts(props:any) {
-    const a = props.obj.map((post: { message: string; likesCount: number; }) => <Post message={post.message} likesCount={post.likesCount}/>)
-    console.log(a)
+type PropsMyPosts = {
+    posts: Array<any>
+}
+
+function MyPosts(props:PropsMyPosts) {
+    const postsElements = props.posts.map((post => <Post message={post.message} likesCount={post.likesCount}/>))
     return (
         <div className={classes.postsBlock}>
             <h3>My posts</h3>
@@ -32,8 +35,7 @@ function MyPosts(props:any) {
 
             </div>
             <div className={classes.posts}>
-                {/*{postsElements}*/}
-                {a}
+                {postsElements}
             </div>
         </div>
     )

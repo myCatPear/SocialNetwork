@@ -3,25 +3,14 @@ import DialogItem from "./DialogItem/DialogItem";
 import classes from "./Dialogs.module.css"
 import Message from "./Message/Message";
 
-const dialogs: Array<{ id: number; name: string }> = [
-    {id: 1, name: 'Dimych'},
-    {id: 2, name: 'Andrew'},
-    {id: 3, name: 'Sveta'},
-    {id: 4, name: 'Sasha'},
-    {id: 5, name: 'Viktor'},
-    {id: 6, name: 'Valera'},
-]
+type PropsDialogs = {
+    dialogs: Array<any>,
+    messages: Array<any>
+}
 
-const messages: Array<{ id: number; message: string }> = [
-    {id: 1, message: "hi"},
-    {id: 2, message: "How is your IT CAMASUTRA"},
-]
-
-const dialogsElements = dialogs.map(dialog=> <DialogItem name={dialog.name} id={dialog.id}/>);
-const messagesElements = messages.map(message => <Message message={message.message}/>);
-
-
-function Dialogs() {
+function Dialogs(props: PropsDialogs) {
+    const dialogsElements = props.dialogs.map(dialog=> <DialogItem name={dialog.name} id={dialog.id}/>);
+    const messagesElements = props.messages.map(message => <Message message={message.message}/>);
     return (
         <div className={classes.dialogs}>
             <div className={classes.dialogsItems}>

@@ -16,10 +16,24 @@ const postsData: Array<{ id: number; message: string; likesCount:number }> = [
     {id: 2, message: "How are you?", likesCount:33},
 ]
 
+const dialogs: Array<{ id: number; name: string }> = [
+    {id: 1, name: 'Dimych'},
+    {id: 2, name: 'Andrew'},
+    {id: 3, name: 'Sveta'},
+    {id: 4, name: 'Sasha'},
+    {id: 5, name: 'Viktor'},
+    {id: 6, name: 'Valera'},
+]
+
+const messages: Array<{ id: number; message: string }> = [
+    {id: 1, message: "hi"},
+    {id: 2, message: "How is your IT CAMASUTRA"},
+]
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App obj={postsData}/>
+    <App posts={postsData} dialogs={dialogs} messages={messages}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
